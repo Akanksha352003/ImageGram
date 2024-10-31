@@ -43,7 +43,6 @@ app.listen(PORT, () => {
 });
 
 /**
- * password: Il6KzfhtiZsiSoQ0
  * npm init -y
  * npm install express
  * node src/index.js
