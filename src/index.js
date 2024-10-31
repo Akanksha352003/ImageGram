@@ -23,7 +23,7 @@ app.use('/api', apiRouter); // if the url starts with /api, then the request is 
 const swaggerDocs = swaggerJSDoc(options);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-app.get('/ping', isAuthenticated, (req, res) => {
+app.get('/ping', (req, res) => {
   console.log(req.query);
   console.log(req.body);
   console.log(req.user);
